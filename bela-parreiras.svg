@@ -1,0 +1,58 @@
+<svg width="100%" height="200" viewBox="0 0 1000 200" xmlns="http://www.w3.org/2000/svg" style="background:#000000;">
+  <defs>
+    <!-- Gradiente animado roxo e rosa -->
+    <linearGradient id="gradienteTexto" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8a2be2">
+        <animate attributeName="stop-color" values="#8a2be2; #c71585; #8a2be2" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#9932cc">
+        <animate attributeName="stop-color" values="#9932cc; #d02090; #9932cc" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ba55d3">
+        <animate attributeName="stop-color" values="#ba55d3; #ff1493; #ba55d3" dur="6s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Símbolo de estrela -->
+    <symbol id="estrela" viewBox="0 0 24 24">
+      <polygon points="12,2 15,10 24,12 15,14 12,22 9,14 0,12 9,10" fill="white"/>
+    </symbol>
+
+    <!-- Símbolo de coração contornado -->
+    <symbol id="coracao" viewBox="0 0 24 24">
+      <path d="M12 21s-1-.672-1.618-1.314C6.082 16.406 2 13.05 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 4.55-4.08 7.91-8.382 11.186C13 20.328 12 21 12 21z" fill="none" stroke="white" stroke-width="1.5"/>
+    </symbol>
+  </defs>
+
+  <!-- Estrelas e corações espalhados -->
+  <g id="shapes">
+    <!-- Estrelas acima e abaixo do texto -->
+    <use href="#estrela" x="20" y="20" width="4" height="4"><animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="80" y="50" width="5" height="5"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="140" y="30" width="6" height="6"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="200" y="70" width="5" height="5"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="260" y="40" width="4" height="4"><animate attributeName="opacity" values="1;0.5;1" dur="3.2s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="320" y="160" width="5" height="5"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="380" y="130" width="6" height="6"><animate attributeName="opacity" values="1;0.4;1" dur="3.5s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="440" y="170" width="4" height="4"><animate attributeName="opacity" values="1;0.2;1" dur="2.7s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="500" y="140" width="5" height="5"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></use>
+    <use href="#estrela" x="560" y="150" width="6" height="6"><animate attributeName="opacity" values="1;0.5;1" dur="3.2s" repeatCount="indefinite"/></use>
+
+    <!-- Corações acima e abaixo -->
+    <use href="#coracao" x="60" y="30" width="10" height="10"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="180" y="50" width="12" height="12"><animate attributeName="opacity" values="1;0.5;1" dur="3.2s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="300" y="20" width="8" height="8"><animate attributeName="opacity" values="1;0.2;1" dur="3.5s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="420" y="60" width="10" height="10"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="540" y="40" width="12" height="12"><animate attributeName="opacity" values="1;0.3;1" dur="3.8s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="660" y="30" width="8" height="8"><animate attributeName="opacity" values="1;0.5;1" dur="3.5s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="780" y="50" width="10" height="10"><animate attributeName="opacity" values="1;0.3;1" dur="3.2s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="900" y="20" width="12" height="12"><animate attributeName="opacity" values="1;0.4;1" dur="3.6s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="120" y="130" width="10" height="10"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></use>
+    <use href="#coracao" x="240" y="160" width="12" height="12"><animate attributeName="opacity" values="1;0.5;1" dur="3.8s" repeatCount="indefinite"/></use>
+  </g>
+
+  <!-- Texto centralizado e grosso -->
+  <text x="50%" y="100" dominant-baseline="middle" text-anchor="middle" font-size="55" font-family="Montserrat, Poppins, Arial, sans-serif" font-weight="700" fill="url(#gradienteTexto)">
+    Bela Parreiras
+  </text>
+</svg>
